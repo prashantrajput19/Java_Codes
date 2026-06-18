@@ -4,21 +4,23 @@
     int x;
     int y;
 
+    // Ya toh constructor se pass kerdo 
+
     Calculator(int x, int y){
         this.x=x;
         this.y=y;
     }
-
-    public int add(int x , int y){
+    // Ya fir function se pass kerdo
+    public int add(){
         return x+y;
     }
-    public int sub(int x , int y){
+    public int sub(){
         return x-y;
     }
-    public int mul(int x , int y){
+    public int mul(){
         return x*y;
     }
-    public int divi(int x , int y){
+    public int divi(){
         return x/y;
     }
 
@@ -33,12 +35,12 @@ public class ClassAndObject {
         int x=20;
         int y=5;
 
-        Calculator cal= new Calculator(x, y);
+        Calculator cal= new Calculator(x,y);
 
-        int add = cal.add(x, y);
-        int sub = cal.sub(x, y);
-        int mul = cal.mul(x, y);
-        int div = cal.divi(x, y);
+        int add = cal.add();
+        int sub = cal.sub();
+        int mul = cal.mul();
+        int div = cal.divi();
 
 
         System.out.println("Addition " +  add);
